@@ -1,6 +1,9 @@
 // import './App.css';
+import Pedido from "./pages/pedido/Pedido";
+import Registro from "./pages/registro/Registro";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,6 +20,9 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/pedido" element={<Pedido />} />
+        <Route exact path="/registro" element={<Registro />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
 
